@@ -1,0 +1,34 @@
+#rename to terraform.tfvars and edit variables below
+
+#Proxmox API Settings
+pm_api_url = "https://192.x.x.x:8006/api2/json"
+pm_api_token_id = "terraform@pam!terraform_token"
+pm_api_token_secret = "your_secret_token"
+
+#VM Configuration
+default_gateway = "192.x.x.x"
+nameserver = "192.x.x.x"
+vlan = 150
+storage = "local-zfs"
+proxmox_host_1 = "node1"
+proxmox_host_2 = "node2"
+
+#Talos Configuration
+talos_cp_ip_addrs = [
+    "172.16.150.201",
+    "172.16.150.202",
+    "172.16.150.203"
+  ]
+
+
+talos_worker_ip_addrs =  [
+    "172.16.150.211",
+    "172.16.150.212",
+    "172.16.150.213"
+  ]
+
+talos_version = "v1.7.5"
+template_name = "talos-v1.7.5-cloud-init-template"
+
+
+

@@ -1,0 +1,59 @@
+# .gitignore
+
+# Local .terraform directories
+**/.terraform/*
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+# Include tfplan files to ignore the plan output of command: terraform plan -out=tfplan
+*tfplan*
+
+# Crash log files
+crash.log
+crash.*.log
+
+# Exclude all .tfvars files, which are likely to contain sensitive data
+*.tfvars
+*.tfvars.json
+
+# Include .terraform.lock.hcl in gitignore
+.terraform.lock.hcl
+
+# Ignore override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Ignore CLI configuration files
+.terraformrc
+terraform.rc
+
+# Ignore environment variable files
+.env
+
+# Ignore kubeconfig files
+kubeconfig
+*kubeconfig*
+
+# Ignore talosconfig files
+talosconfig
+*talosconfig*
+
+# Packer
+local.pkr.hcl
+*.pkr.json
+*.pkrvars.hcl
+*.pkrvars.json
+packer_cache/
+packer_cache/*
+packer.log
+
+# Ignore temporary files created by editors or OS
+*~
+*.swp
+*.swo
+.DS_Store
+
